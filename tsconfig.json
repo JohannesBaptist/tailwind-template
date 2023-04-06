@@ -16,9 +16,10 @@
     "incremental": true,
     "paths": {
       "@base/*": ["./src/*"],
-      "@components/*": ["./src/components/*"]
+      "@components/*": ["./src/components/*"],
+      "@mobile/*": ["./src/components/mobile/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/index.jsx", "src/pages/_app.jsx"],
   "exclude": ["node_modules"]
 }
