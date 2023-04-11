@@ -1,11 +1,13 @@
 import React from 'react'
-import Header from "@base/components/Header"
+import Header from "@components/Header"
 import Footer from "@base/components/Footer"
 
-function Layout() {
+
+function Layout({children}: any) {
   return (
     <>
     <Header/>
+    <>{children}</>
     <Footer/>
     </>
   )

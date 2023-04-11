@@ -9,6 +9,7 @@ export default function Header() {
   useEffect(() => {
    theme? document.body.classList.add("dark", "bg-black") : document.body.classList.remove("dark", "bg-black")  ;
   })
+  
   const [theme, setTheme] = useState(false)
   return (
     <div className='sticky top-0 flex items-center justify-start w-full bg-black dark:bg-white p-5 h-50px'>

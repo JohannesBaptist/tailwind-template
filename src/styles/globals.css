@@ -19,3 +19,26 @@
     }
 
 }
+
+@layer components {
+    .col-center {
+        @apply flex flex-col items-center justify-center;
+    }
+
+    .row-center {
+        @apply flex items-center justify-center;
+      }
+
+      .link {
+        @apply hover:cursor-pointer hover:underline
+      }
+}
+
+@font-face {
+    font-family: "teko";
+    src: url("../fonts/teko/TekoBold.ttf");
+  }
+
+input:focus::placeholder {
+    color: transparent;
+  }

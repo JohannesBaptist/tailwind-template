@@ -20,6 +20,6 @@
       "@mobile/*": ["./src/components/mobile/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/index.jsx", "src/pages/_app.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/pages/index.tsx", "src/pages/_app.tsx"],
   "exclude": ["node_modules"]
 }
