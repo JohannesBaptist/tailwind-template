@@ -25,12 +25,20 @@
         @apply flex flex-col items-center justify-center;
     }
 
+    .input-box {
+        @apply text-black bg-gray-100 focus:outline-0 w-full flex-grow rounded-lg text-center shadow-lg;
+      }
+
     .row-center {
         @apply flex items-center justify-center;
       }
 
       .link {
         @apply hover:cursor-pointer hover:underline
+      }
+
+      .saveButton {
+        @apply w-[270px] text-center py-3 bg-orange-500 text-lg rounded-xl text-white font-medium
       }
 }
 

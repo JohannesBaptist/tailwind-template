@@ -30,7 +30,7 @@ export default function Home({}) {
             <span className="text-red-600">404</span> - PAGE NOT FOUND
           </p>
           <p className="text-white max-w-[500px] px-5 text-center">
-            the page you are looking for might have been removed, had it's name
+            the page you are looking for might have been removed, had it &apos;s name
             changed or is temporarily unavailable.
           </p>
           <div className="pt-2">

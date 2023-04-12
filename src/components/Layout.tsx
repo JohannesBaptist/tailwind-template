@@ -5,11 +5,12 @@ import Footer from "@base/components/Footer"
 
 function Layout({children}: any) {
   return (
-    <>
+    <div className='w-screen h-screen dark:bg-black flex flex-col' >
     <Header/>
-    <>{children}</>
-    <Footer/>
-    </>
+    <div className='flex-grow flex '>
+    {children}
+    </div>
+    </div>
   )
 }
 

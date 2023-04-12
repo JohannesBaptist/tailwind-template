@@ -1,8 +1,6 @@
 
 import { useRouter} from "next/router";
 
-
-
 function Search(context) {
   const router = useRouter();
   const { slug } = router.query;
