@@ -5,6 +5,8 @@ const initialState: UserState = {
   e: "",
   data: {},
   loading: true,
+  active: "",
+  activities: [{activity: "Visit Paris", checked: false}, {activity: "Visit Amsterdam", checked: false}, {activity: "Go SkyDiving", checked: true} ]
 };
 
 const userDataSlice = createSlice({
@@ -27,10 +29,13 @@ const userDataSlice = createSlice({
       state.data.location = a.payload.location;
       state.data.postalCode = a.payload.postalCode
     },
+    setActive(state, a) {
+      state.active = a.payload
+    }
   },
 });
 
 export const userDataReducer = userDataSlice.reducer
 
-export const {fetchSuc, fetchFail, setUserData} = userDataSlice.actions
+export const {fetchSuc, fetchFail, setUserData, setActive} = userDataSlice.actions
 

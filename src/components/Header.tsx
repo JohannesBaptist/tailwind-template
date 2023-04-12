@@ -26,7 +26,7 @@ export default function Header() {
 
   const [theme, setTheme] = useState(false);
   return (
-    <div className="flex items-center justify-between w-full bg-black dark:bg-white p-5 h-30px">
+    <div className="flex items-center justify-between w-full bg-black dark:bg-white p-5 h-[10vh]">
       <div
         onClick={() => setTheme(!theme)}
         className="bg-white space-x-1 dark:bg-black dark:text-white flex items-center justify-center text-black rounded-lg p-[7px] px-2 hover:cursor-pointer ease-in duration-200"

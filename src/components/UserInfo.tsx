@@ -11,7 +11,7 @@ import {
 import { setUserData } from "@base/store/userDataSlice";
 import { ArrowPathIcon } from "@heroicons/react/24/solid";
 
-function Panel() {
+function UserInfo() {
   const dispatch = useDispatch();
   const data = useSelector((state: IRootState) => state.userData.data);
   const { loading } = useSelector((state: IRootState) => state.userData);
@@ -101,4 +101,4 @@ function Panel() {
   );
 }
 
-export default Panel;
+export default UserInfo;

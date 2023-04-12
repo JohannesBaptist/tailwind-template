@@ -8,7 +8,9 @@ export interface UserState {
       phone?: string;
       location?: string;
       postalCode?: string;
-    };
+    },
+    active: string;
+    activities: [{activity: string, checked: boolean}, {activity: string, checked: boolean}, {activity: string, checked: boolean}];
   }
   
   export interface changeUserState {
@@ -25,3 +27,6 @@ export interface UserState {
     changeUserData: changeUserState;
   }
   
+export interface Active {
+    checked: boolean
+}
