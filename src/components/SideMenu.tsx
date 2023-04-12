@@ -1,4 +1,4 @@
-import { IRootState } from "@base/pages/types/main";
+import IRootState from "@base/components/types/main";
 import {
   ArrowLeftCircleIcon,
   BoltIcon,

@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect, useReducer } from "react";
 import { useRouter } from "next/router";
 
-export default function Home({}) {
+export default function Error({}) {
   useEffect(() => {
     document.body.classList.add("bg-black");
   }, []);

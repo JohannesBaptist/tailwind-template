@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import { IRootState } from "@base/pages/types/main";
+import IRootState from "@base/components/types/main";
 
 import React from "react";
 import {

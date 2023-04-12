@@ -20,7 +20,7 @@ export default function Home({}) {
         dispatch(changeAll(r.data));
       })
       .catch((e) => dispatch(fetchFail(e.message)));
-  }, []);
+  });
 
   return (
     <>

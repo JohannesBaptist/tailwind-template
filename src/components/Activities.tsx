@@ -1,4 +1,4 @@
-import { IRootState } from "@base/pages/types/main";
+import IRootState from "@base/components/types/main";
 import React from "react";
 import { useSelector } from "react-redux";
 import { CheckBadgeIcon, XMarkIcon } from "@heroicons/react/24/solid";
@@ -16,9 +16,9 @@ function Activities() {
     const { activities } = useSelector((state: IRootState) => state.userData);
   return (
     <>
-      {activities.map((item) => {
+      {activities.map((item, index) => {
         return (
-          <div className="row-center space-x-3">
+          <div key={`activity ${index}`} className="row-center space-x-3">
             <div className="h-[50px] col-center bg-orange bg-gray-300 shadow-md hover:cursor-pointer px-5 rounded-lg">
                 <div className=" hover:cursor-pointer font-bold  min-w-[35px] text-center max-w-[35px] hover:text-red-300"><CheckMark active={item.checked}/></div>
               </div>

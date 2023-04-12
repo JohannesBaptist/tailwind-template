@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { changeUserState } from "@base/pages/types/main";
+import { changeUserState } from "@base/components/types/main";
 
 const initialState: changeUserState = {
 };

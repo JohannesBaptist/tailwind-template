@@ -11,7 +11,7 @@ import { useEffect } from "react";
 
 const active = "ToDoList"
 
-export default function Home({}) {
+export default function Favorites({}) {
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -23,7 +23,7 @@ export default function Home({}) {
         dispatch(changeAll(r.data));
       })
       .catch((e) => dispatch(fetchFail(e.message)));
-  }, []);
+  });
   
 
   return (
